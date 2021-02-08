@@ -1,0 +1,28 @@
+<nav class="navbar navbar-dark bg-dark mb-3">
+  <div class="container-fluid">
+    <a
+      [routerLink]="['/']"
+      routerLinkActive="router-link-active"
+      class="navbar-brand"
+    >
+      MailBox</a
+    >
+
+    <div class="dropdown" style="margin-right: 100px">
+      <button class="btn-light btn-circle" data-toggle="dropdown" type="button">
+        <fa-icon
+          [icon]="faUser"
+          class="fa-sm"
+          style="font-size: 25px"
+        ></fa-icon>
+      </button>
+      <div class="dropdown-menu">
+        <a href="/" class="dropdown-item">Profile</a>
+        <div class="dropdown-divider"></div>
+        <a href="/" class="dropdown-item">Manage Account</a>
+        <div class="dropdown-divider"></div>
+        <a href="/" class="dropdown-item">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
